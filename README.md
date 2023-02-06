@@ -35,6 +35,7 @@ Now create your instance with what kind of rayid you want.
 - digit: Numbers
 - lower: Alphabet in lower case.
 - upper: Alphabet in upper case.
+- symbol: Symbols for password and stuff.
 
 > No type means all combined togather.
 
@@ -61,6 +62,26 @@ Or do it inside.
 
 ```javascript
 console.log(ray.gen(50)); // clherhvpkhwynhqhzluozionumnjqgjroeiymgqvlaknzjtdic
+```
+
+## Examples
+
+Create common instances.
+
+```javascript
+const ray = new RayID(); // All values
+const srt = new RayID("lower"); // Loercase generator
+const int = new RayID("digit"); // Only int generator
+const sym = new RayID("symbol"); // Symbol generator
+```
+
+Now use them:
+
+```javascript
+console.log(ray.gen(10)); // Z*jVQ3c:+H
+console.log(srt.gen(10)); // ksixvpqohi
+console.log(int.gen(10)); // 4748182066
+console.log(sym.gen(10)); // ?,^.+</::/
 ```
 
 All done!
