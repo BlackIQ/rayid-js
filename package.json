@@ -4,16 +4,19 @@
   "description": "RayID generator.",
   "main": "index.js",
   "type": "module",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
+  "author": "Amirhossein Mohammadi",
+  "license": "MIT",
   "scripts": {
     "test": "node index.js"
   },
+  "homepage": "https://gitlab.com/blackiq-packages/npm/rayid",
   "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/blackiq-packages/npm/rayid.git"
+    "url": "git+https://gitlab.com/blackiq-packages/npm/rayid.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/blackiq-packages/npm/rayid/-/issues",
+    "email": "bugs@amirhossein.info"
   },
   "keywords": [
     "RayID",
@@ -21,8 +24,5 @@
     "ID",
     "Code",
     "Generator"
-  ],
-  "author": "Amirhossein Mohammadi",
-  "license": "MIT",
-  "homepage": "https://gitlab.com/blackiq-packages/npm/rayid"
+  ]
 }
