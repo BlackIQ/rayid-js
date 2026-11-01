@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/BlackIQ/rayid.git"
+    "url": "git+https://gitlab.com/blackiq-packages/npm/rayid.git"
   },
   "keywords": [
     "RayID",
@@ -24,8 +24,5 @@
   ],
   "author": "Amirhossein Mohammadi",
   "license": "MIT",
-  "bugs": {
-    "url": "https://gitlab.com/BlackIQ/rayid/issues"
-  },
-  "homepage": "https://gitlab.com/BlackIQ/rayid#readme"
+  "homepage": "https://gitlab.com/blackiq-packages/npm/rayid"
 }
