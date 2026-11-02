@@ -1,143 +1,33 @@
-# RayID
+# RayID (JavaScript)
 
-**RayID** is a generated code that we use to track logs, posts or events. You can generate your own rayid, but we made your job easier!
+Generate short IDs for logs, events, and traces.
 
-In this instructure you will learn about how to use this package in your apps.
-
-## Table of content
-
-- [Installation](#installation)
-- [methods](#methods)
-- [Development](#development)
-
-## Installation
-
-How to install **RayID**? To install this package, use **NPM**.
-
-```shell
-$ npm i rayid
+```bash
+npm install rayid
 ```
 
-## Config
-
-So, import the package.
-
 ```javascript
-// ESM 6 and higher
 import RayID from "rayid";
 
-// ESM 5 and lower
-const RayID = require("rayid");
-```
-
-Now create your instance with what kind of rayid you want.
-
-- digit: Numbers
-- lower: Alphabet in lower case.
-- upper: Alphabet in upper case.
-- symbol: Symbols for password and stuff.
-
-> No type means all combined togather.
-
-```javascript
 const ray = new RayID("lower");
+
+console.log(ray.gen(16));
 ```
 
-## Methods
+**Types:** `digit` · `lower` · `upper` · `symbol` · (default = all)
 
-Only one method! `gen()`.
+## Docs
 
-### `gen()`
+Full documentation: [rayid-js.amirhossein.info](https://rayid-js.amirhossein.info)
 
-in **gen()** just say the length.
+## Links
 
-> There is no limit :)
+|                      |                                               |
+| -------------------- | --------------------------------------------- |
+| npm                  | https://www.npmjs.com/package/rayid           |
+| Source               | https://gitlab.com/blackiq-packages/npm/rayid |
+| **RayID for Python** | https://pypi.org/project/rayid/               |
 
-```javascript
-const r = ray.gen(50);
-console.log(r); // zpciqivbkgoubrurrnozqhcdzlerjkllgtwbqbhllrxcremprd
-```
+## License
 
-Or do it inside.
-
-```javascript
-console.log(ray.gen(50)); // clherhvpkhwynhqhzluozionumnjqgjroeiymgqvlaknzjtdic
-```
-
-## Examples
-
-Create common instances.
-
-```javascript
-const ray = new RayID(); // All values
-const srt = new RayID("lower"); // Loercase generator
-const int = new RayID("digit"); // Only int generator
-const sym = new RayID("symbol"); // Symbol generator
-```
-
-Now use them:
-
-```javascript
-console.log(ray.gen(10)); // Z*jVQ3c:+H
-console.log(srt.gen(10)); // ksixvpqohi
-console.log(int.gen(10)); // 4748182066
-console.log(sym.gen(10)); // ?,^.+</::/
-```
-
-All done!
-
----
-
-## Development
-
-If you want to develop the package, it is so simple. just follow steps below.
-
-- Clone the project
-- Install dependencies by running `$ npm install`
-- Start changing!
-  - Link package
-  - Test
-
-> Before you start: **Remember the base or code are stored in `lib/rayid.js`**. You need to edit there.
-
-### Cloning the project
-
-To clone the project, you need to have git installed. Ok, now clone it same as command below.
-
-```shell
-$ git clone https://gitlab.com/BlackIQ/rayid
-```
-
-### installing dependencies
-
-Next, install what package uses with `npm i` or `npm install`.
-
-```shell
-$ npm i
-```
-
-### Changing
-
-To change package or anything, your need a testing environment to use linked package. Just follow steps.
-
-#### Link package
-
-We asoume you are in `lib` directory. Right. You can open a **tmux** or in another terminal to cd in `test` directory.
-
-In `lib` directory enter link command:
-
-```shell
-$ npm link
-```
-
-So, in other terminal, or other tmux part, link your development package to your `test` directory. If you are in the `test` directory ok, if not, just say `cd test` and enter the linking command:
-
-```shell
-$ npm link rayid
-```
-
-Linking step is done.
-
-#### Test
-
-Your test app is linked. Change anything in package and test it in `test` directory.
+MIT
