@@ -1,0 +1,38 @@
+site_name: RayID Docs
+site_description: Official RayID Package on NPM documentation
+site_url: https://rayid-js.amirhossein.info
+
+repo_url: https://gitlab.com/blackiq-packages/npm/rayid
+repo_name: amirhossein/rayid-js
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: orange
+      toggle:
+        icon: material/brightness-7
+        name: Dark mode
+    - scheme: slate
+      primary: orange
+      toggle:
+        icon: material/brightness-4
+        name: Light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - Learn:
+    - Install: learn/install.md
+    - Functions: learn/functions.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
