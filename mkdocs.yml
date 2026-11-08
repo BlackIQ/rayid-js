@@ -1,6 +1,6 @@
 site_name: RayID Docs
 site_description: Official RayID Package on NPM documentation
-site_url: https://rayid-js.amirhossein.info
+site_url: https://rayid-js.docs.amirhossein.info
 
 repo_url: https://gitlab.com/blackiq-packages/npm/rayid
 repo_name: amirhossein/rayid-js

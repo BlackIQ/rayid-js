@@ -18,7 +18,7 @@ console.log(ray.gen(16));
 
 ## Docs
 
-Full documentation: [rayid-js.amirhossein.info](https://rayid-js.amirhossein.info)
+Full documentation: [rayid-js.docs.amirhossein.info](https://rayid-js.docs.amirhossein.info)
 
 ## Links
 

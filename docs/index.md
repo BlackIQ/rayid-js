@@ -9,11 +9,11 @@ const ray = new RayID("lower");
 console.log(ray.gen(16));
 ```
 
-|                  |                                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------- |
-| npm              | [npmjs.com/package/rayid](https://www.npmjs.com/package/rayid)                              |
-| Source           | [GitLab](https://gitlab.com/blackiq-packages/npm/rayid)                                     |
-| **RayID Python** | [PyPI `rayid`](https://pypi.org/project/rayid/) · [docs](https://rayid-py.amirhossein.info) |
+|                  |                                                                                                  |
+| ---------------- | ------------------------------------------------------------------------------------------------ |
+| npm              | [npmjs.com/package/rayid](https://www.npmjs.com/package/rayid)                                   |
+| Source           | [GitLab](https://gitlab.com/blackiq-packages/npm/rayid)                                          |
+| **RayID Python** | [PyPI `rayid`](https://pypi.org/project/rayid/) · [docs](https://rayid-py.docs.amirhossein.info) |
 
 ## Next
 
