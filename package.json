@@ -9,13 +9,13 @@
   "scripts": {
     "test": "node index.js"
   },
-  "homepage": "https://gitlab.com/blackiq-packages/npm/rayid",
+  "homepage": "https://github.com/BlackIQ/rayid-js",
   "repository": {
-    "url": "git+https://gitlab.com/blackiq-packages/npm/rayid.git",
+    "url": "git+https://github.com/BlackIQ/rayid-js.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://gitlab.com/blackiq-packages/npm/rayid/-/issues",
+    "url": "https://github.com/BlackIQ/rayid-js/issues",
     "email": "bugs@amirhossein.info"
   },
   "keywords": [
