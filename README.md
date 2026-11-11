@@ -18,15 +18,14 @@ console.log(ray.gen(16));
 
 ## Docs
 
-Full documentation: [rayid-js.docs.amirhossein.info](https://rayid-js.docs.amirhossein.info)
+Full documentation: [rayid-js.amirhossein.info](https://rayid-js.amirhossein.info)
 
 ## Links
 
-|                      |                                               |
-| -------------------- | --------------------------------------------- |
-| npm                  | https://www.npmjs.com/package/rayid           |
-| Source               | https://gitlab.com/blackiq-packages/npm/rayid |
-| **RayID for Python** | https://pypi.org/project/rayid/               |
+|        |                                     |
+| ------ | ----------------------------------- |
+| npm    | https://www.npmjs.com/package/rayid |
+| Source | https://github.com/BlackIQ/rayid-js |
 
 ## License
 
