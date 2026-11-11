@@ -504,7 +504,7 @@ wheels = [
 ]
 
 [[package]]
-name = "rayid"
+name = "rayid-js-docs"
 version = "0.1.0"
 source = { virtual = "." }
 
