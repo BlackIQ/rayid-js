@@ -22,10 +22,11 @@ Full documentation: [rayid-js.amirhossein.info](https://rayid-js.amirhossein.inf
 
 ## Links
 
-|        |                                     |
+| Title  | URL                                 |
 | ------ | ----------------------------------- |
-| npm    | https://www.npmjs.com/package/rayid |
+| NPM    | https://www.npmjs.com/package/rayid |
 | Source | https://github.com/BlackIQ/rayid-js |
+| Docs   | https://rayid-js.amirhossein.info   |
 
 ## License
 
