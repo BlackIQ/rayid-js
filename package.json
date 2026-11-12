@@ -9,7 +9,7 @@
   "scripts": {
     "test": "node index.js"
   },
-  "homepage": "https://github.com/BlackIQ/rayid-js",
+  "homepage": "https://rayid-js.amirhossein.info",
   "repository": {
     "url": "git+https://github.com/BlackIQ/rayid-js.git",
     "type": "git"
