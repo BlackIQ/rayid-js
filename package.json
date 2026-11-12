@@ -1,6 +1,6 @@
 {
   "name": "rayid",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "RayID generator.",
   "main": "index.js",
   "type": "module",
