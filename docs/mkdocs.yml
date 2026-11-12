@@ -3,7 +3,7 @@ site_description: Official RayID Package on NPM documentation
 site_url: https://rayid-js.amirhossein.info
 
 repo_url: https://github.com/BlackIQ/rayid-js
-repo_name: amirhossein/rayid-js
+repo_name: BlackIQ/rayid-js
 
 theme:
   name: material
