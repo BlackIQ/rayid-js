@@ -2,12 +2,24 @@
   "name": "rayid",
   "version": "2.1.8",
   "description": "RayID generator.",
-  "main": "index.js",
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "author": "Amirhossein Mohammadi",
   "license": "MIT",
   "scripts": {
-    "test": "node index.js"
+    "build": "tsc",
+    "test": "npm run build",
+    "prepublishOnly": "npm run build"
   },
   "homepage": "https://rayid-js.amirhossein.info",
   "repository": {
@@ -24,5 +36,9 @@
     "ID",
     "Code",
     "Generator"
-  ]
+  ],
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
 }
