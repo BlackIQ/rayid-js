@@ -3,14 +3,14 @@ const values = {
   lower: "abcdefghijklmnopqrstuvwxyz",
   upper: "abcdefghijklmnopqrstuvwxyz".toUpperCase(),
   symbol: "!@#$%^&*()_+|}]{[:;?/>.<,`",
-};
+} as const;
+
+type CharacterType = keyof typeof values;
 
 class RayID {
-  constructor(type) {
-    this.type = type;
-  }
+  constructor(private type?: CharacterType) {}
 
-  engine = (length) => {
+  engine = (length: number): string => {
     let result = "";
 
     const characters = this.characters();
@@ -23,25 +23,22 @@ class RayID {
     return result;
   };
 
-  characters = () => {
-    if (values[this.type] !== undefined) return values[this.type];
-    else {
-      let chars = "";
-
-      Object.values(values).map((value) => (chars += value));
-
-      return chars;
+  characters = (): string => {
+    if (this.type && values[this.type] !== undefined) {
+      return values[this.type];
     }
+
+    return Object.values(values).join("");
   };
 
-  gen = (length) => {
+  gen = (length: number): string => {
     const generated = this.engine(length);
 
     if (generated[0] === "0") {
       return this.gen(length);
-    } else {
-      return generated;
     }
+
+    return generated;
   };
 }
 
