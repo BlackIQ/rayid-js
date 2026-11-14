@@ -1,32 +1,35 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# Dependencies
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
-/coverage
-
-# production
+# TypeScript build output
+/dist
 /build
 
-# misc
-.DS_Store
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Testing
+/coverage
 
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-yarn.lock
-package.lock
 
-# images
+# Package manager
+# Keep package-lock.json in Git
+# yarn.lock
+# pnpm-lock.yaml
+
+# Misc
+.DS_Store
+*.local
+
+# Documentation assets
 /src/documents
-
-# Logs
-logs
